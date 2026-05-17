@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Frutopia: Un tour interactivo en nuestra finca de árboles frutales. Disfruta de senderos naturales, cosecha activa, catas de frutas y una aventura orgánica para toda la familia. ¡Reserva hoy!">
+    <meta name="keywords" content="huerto frutal, agroturismo, senderismo, tour familiar, cosecha orgánica, naturaleza, frutopia, reservas online">
+    <meta name="author" content="Frutopia">
+    <title>Frutopia | Experiencia de Tour Frutal y Aventura Orgánica</title>
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-soft">
+
+    <!-- FLOATING NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <!-- Inline SVG Orange Fruit Logo -->
+                <svg viewBox="0 0 512 512">
+                    <path d="M256,64c-105.87,0-192,86.13-192,192s86.13,192,192,192,192-86.13,192-192S361.87,64,256,64Zm81.56,220a22,22,0,0,1-19.12,11.23,22.3,22.3,0,0,1-11.26-3.14l-40.38-23.32a22,22,0,0,1-11-19.06V203.41a22,22,0,0,1,11-19.06L307.18,161a22.25,22.25,0,0,1,22.52,0,22,22,0,0,1,11,19.06v46.33a22,22,0,0,1-11,19.06ZM230.13,101.44a14,14,0,0,1,19.8,0l22.62,22.63a14,14,0,1,1-19.8,19.8L250.13,121.24,230.13,141.24a14,14,0,1,1-19.8-19.8Z"/>
+                    <path d="M256,96c88.22,0,160,71.78,160,160s-71.78,160-160,160S96,344.22,96,256,167.78,96,256,96m0-32C132.3,64,32,164.3,32,288S132.3,512,256,512s224-100.3,224-224S379.7,64,256,64Z" style="fill: #1E5E3A;"/>
+                    <circle cx="256" cy="288" r="128" style="fill: #E87722;"/>
+                    <path d="M280.12,185.34a12,12,0,0,0-16.24,4.12l-40,70a12,12,0,0,0,20.8,11.88l40-70A12,12,0,0,0,280.12,185.34Z" style="fill: #FFFFFF;"/>
+                    <!-- Leaf -->
+                    <path d="M296,32c30,0,62,18,72,40-10,32-42,40-72,40s-62-18-72-40c10-32,42-40,72-40Z" style="fill: #1E5E3A;"/>
+                </svg>
+                Frutopia<span>.</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#actividades" class="nav-link">Actividades</a>
+                <a href="#mapa" class="nav-link">Mapa de la Finca</a>
+                <a href="#reservas" class="btn btn-primary btn-sm">Reservar Tour</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <div>
+                <span class="hero-tag">
+                    🌱 Experiencia 100% Orgánica
+                </span>
+                <h1 class="text-hero-title">
+                    Descubre el sabor de la naturaleza en <span style="color: hsl(var(--primary));">Frutopia</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Camina por senderos mágicos, cosecha tus propias frutas directamente de los árboles y disfruta de un día de campo inmersivo con actividades guiadas para toda la familia.
+                </p>
+                <div class="hero-actions">
+                    <a href="#reservas" class="btn btn-accent">Reservar Aventura</a>
+                    <a href="#mapa" class="btn btn-outline">Explorar la Finca</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="assets/hero-bg.png" alt="Sendero hermoso de árboles frutales en Frutopia" class="hero-image">
+                    
+                    <!-- Premium visual overlay badge -->
+                    <div class="hero-image-badge">
+                        <div class="badge-icon">🍊</div>
+                        <div class="badge-text">
+                            <h4>+25 Especies</h4>
+                            <p>De árboles frutales listos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HIGHLIGHTS / ACTIVITIES SECTION -->
+    <section id="actividades" class="section bg-white section-curved">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">¿Qué te espera?</span>
+                <h2 class="text-section-title">Actividades de campo pensadas para conectar</h2>
+                <p class="section-desc">Diseñamos una experiencia interactiva donde el campo se convierte en tu patio de juegos. Explora, aprende y degusta sin límites.</p>
+            </div>
+            
+            <div class="activities-grid">
+                <!-- Activity 1 -->
+                <div class="activity-card">
+                    <div class="activity-card-image">
+                        <img src="assets/activity_cosecha.png" alt="Taller de Cosecha Activa">
+                        <div class="activity-emoji-badge badge-1">🍊</div>
+                    </div>
+                    <div class="activity-card-content">
+                        <h3 class="activity-title">Taller de Cosecha Activa</h3>
+                        <p class="activity-desc">Te damos tu propia cesta y te enseñamos a identificar las frutas en su punto exacto de madurez. ¡Llévate a casa lo que coseches!</p>
+                        <span class="activity-tag">Popular</span>
+                    </div>
+                </div>
+                
+                <!-- Activity 2 -->
+                <div class="activity-card">
+                    <div class="activity-card-image">
+                        <img src="assets/activity_senderos.png" alt="Senderos Cítricos y Silvestres">
+                        <div class="activity-emoji-badge badge-2">🌲</div>
+                    </div>
+                    <div class="activity-card-content">
+                        <h3 class="activity-title">Senderos Cítricos y Silvestres</h3>
+                        <p class="activity-desc">Camina bajo la sombra de mandarinos, mangos y árboles exóticos mientras nuestro guía local comparte historias y secretos de cultivo orgánico.</p>
+                        <span class="activity-tag">Guía Incluido</span>
+                    </div>
+                </div>
+                
+                <!-- Activity 3 -->
+                <div class="activity-card">
+                    <div class="activity-card-image">
+                        <img src="assets/activity_cocina.png" alt="Cocina y Mermeladas">
+                        <div class="activity-emoji-badge badge-3">🍯</div>
+                    </div>
+                    <div class="activity-card-content">
+                        <h3 class="activity-title">Cocina y Mermeladas</h3>
+                        <p class="activity-desc">Aprende el proceso artesanal de elaboración de mermeladas y jaleas utilizando la fruta recolectada del día. ¡Una delicia rústica!</p>
+                        <span class="activity-tag">Taller Extra</span>
+                    </div>
+                </div>
+                
+                <!-- Activity 4 -->
+                <div class="activity-card">
+                    <div class="activity-card-image">
+                        <img src="assets/activity_granja.png" alt="Granja Interactiva">
+                        <div class="activity-emoji-badge badge-4">🏡</div>
+                    </div>
+                    <div class="activity-card-content">
+                        <h3 class="activity-title">Granja Interactiva</h3>
+                        <p class="activity-desc">Ideal para los más pequeños. Conoce nuestros animales de campo, alimenta cabritas y disfruta de una merienda campestre junto al arroyo.</p>
+                        <span class="activity-tag">Familiar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE MAP SECTION -->
+    <section id="mapa" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">El Circuito</span>
+                <h2 class="text-section-title">Explora las estaciones de la finca</h2>
+                <p class="section-desc">Haz clic en los puntos del mapa interactivo para ver qué sorpresas y sabores te esperan en cada parada de nuestro recorrido.</p>
+            </div>
+            
+            <div class="map-layout">
+                <!-- Interactive CSS/SVG Map Visual -->
+                <div class="map-visual-container">
+                    <div class="map-svg-wrapper">
+                        <!-- Custom organic map illustration using styled SVG paths -->
+                        <svg viewBox="0 0 800 570" class="map-svg" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background grass texture -->
+                            <rect width="800" height="570" rx="30" fill="#E8EFE9" />
+                            
+                            <!-- Forest areas -->
+                            <path d="M50,80 Q100,50 180,80 T300,120 T420,90 T550,110 T700,70 L750,220 L60,250 Z" fill="#D3E5D6" opacity="0.8" />
+                            <path d="M120,380 Q220,400 350,370 T550,380 T720,410 L750,520 L60,520 Z" fill="#D3E5D6" opacity="0.8" />
+                            
+                            <!-- Winding Trail Road -->
+                            <path d="M120,440 Q180,350 250,300 T380,240 T580,220 T680,180" fill="none" stroke="#D3BFA7" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M120,440 Q180,350 250,300 T380,240 T580,220 T680,180" fill="none" stroke="#F1E6D8" stroke-width="16" stroke-dasharray="10 10" stroke-linecap="round" stroke-linejoin="round" />
+                            
+                            <!-- Winding River -->
+                            <path d="M0,280 Q200,290 350,330 T600,320 T800,300" fill="none" stroke="#A7D3EC" stroke-width="32" opacity="0.6" />
+                            <path d="M0,280 Q200,290 350,330 T600,320 T800,300" fill="none" stroke="#C4E3F5" stroke-width="16" opacity="0.9" />
+                            
+                            <!-- Little Bridge -->
+                            <rect x="330" y="295" width="40" height="50" rx="5" transform="rotate(15 350 320)" fill="#B58A63" />
+                            
+                            <!-- Decorative Tree Icons inside SVG -->
+                            <g fill="#A9C8B0">
+                                <circle cx="80" cy="120" r="24" /><circle cx="120" cy="110" r="16" />
+                                <circle cx="680" cy="90" r="30" /><circle cx="720" cy="120" r="20" />
+                                <circle cx="200" cy="480" r="28" />
+                                <circle cx="600" cy="460" r="24" />
+                            </g>
+                        </svg>
+                        
+                        <!-- Map Clickable Checkpoints (Absolute positioned relative to map-svg-wrapper) -->
+                        <!-- Checkpoint 1 (Sendero Cítrico) -->
+                        <div class="map-pin active" style="top: 75%; left: 16%;" data-station="1">
+                            <div class="map-pin-pulse"></div>
+                            <div class="map-pin-inner">1</div>
+                        </div>
+                        
+                        <!-- Checkpoint 2 (Invernadero) -->
+                        <div class="map-pin" style="top: 52%; left: 32%;" data-station="2">
+                            <div class="map-pin-pulse"></div>
+                            <div class="map-pin-inner">2</div>
+                        </div>
+                        
+                        <!-- Checkpoint 3 (Casa Mermeladas) -->
+                        <div class="map-pin" style="top: 40%; left: 52%;" data-station="3">
+                            <div class="map-pin-pulse"></div>
+                            <div class="map-pin-inner">3</div>
+                        </div>
+                        
+                        <!-- Checkpoint 4 (Mirador) -->
+                        <div class="map-pin" style="top: 28%; left: 82%;" data-station="4">
+                            <div class="map-pin-pulse"></div>
+                            <div class="map-pin-inner">4</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Station Description Panel -->
+                <div class="station-panel" id="station-panel">
+                    <div class="station-image-container">
+                        <img src="assets/station_1.png" alt="El Sendero del Sol" id="station-img">
+                    </div>
+                    <div class="station-content-body">
+                        <span class="station-badge" id="station-badge">Estación 1</span>
+                        <h3 class="station-title" id="station-title">El Sendero del Sol (Cítricos)</h3>
+                        <p class="station-content" id="station-content">
+                            Iniciamos nuestra aventura en un huerto soleado donde reinan los cítricos. Aquí podrás probar mandarinas dulces, limones gigantes y naranjas cosechadas en el acto. Nuestro guía te enseñará cómo los polinizadores y el abono natural logran esta dulzura.
+                        </p>
+                        <div style="display: flex; gap: 10px;">
+                            <span class="station-fruit-tag" id="station-fruit">🍊 Mandarina & Limón</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING SYSTEM SECTION (MODULITO) -->
+    <section id="reservas" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Agenda tu Experiencia</span>
+                <h2 class="text-section-title">Reserva tu lugar en Frutopia</h2>
+                <p class="section-desc">Completa nuestro sencillo módulo de reserva interactivo de 4 pasos. Te llegará un correo de confirmación y enviaremos una notificación directa a nuestro equipo.</p>
+            </div>
+            
+            <div class="booking-section">
+                <div class="booking-layout">
+                    <!-- LEFT COLUMN: Form interactive steps -->
+                    <div class="booking-form-side">
+                        <!-- Steps Indicator -->
+                        <div class="steps-nav">
+                            <div class="steps-nav-progress" id="steps-progress"></div>
+                            <div class="step-node active" id="node-1">
+                                1
+                                <span class="step-node-label">Tour</span>
+                            </div>
+                            <div class="step-node" id="node-2">
+                                2
+                                <span class="step-node-label">Fecha</span>
+                            </div>
+                            <div class="step-node" id="node-3">
+                                3
+                                <span class="step-node-label">Grupo</span>
+                            </div>
+                            <div class="step-node" id="node-4">
+                                4
+                                <span class="step-node-label">Datos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Form steps container -->
+                        <form id="booking-form" onsubmit="return false;">
+                            
+                            <!-- STEP 1: SELECT EXPERIENCE -->
+                            <div class="booking-step active" id="step-1">
+                                <h3 class="step-title">1. Selecciona tu tipo de experiencia</h3>
+                                <div class="experience-picker">
+                                    
+                                    <!-- Experience Option 1 -->
+                                    <div class="experience-option selected" data-tour="basic" data-price-adult="15" data-price-child="8">
+                                        <div class="experience-opt-icon">🍊</div>
+                                        <div class="experience-opt-details">
+                                            <h4>Tour Cosecha & Sendero</h4>
+                                            <p>Paseo guiado por senderos + Cesta de cosecha activa. (Duración: 2h)</p>
+                                        </div>
+                                        <div class="experience-opt-price">
+                                            $15.00 <span>por adulto</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Experience Option 2 -->
+                                    <div class="experience-option" data-tour="premium" data-price-adult="25" data-price-child="12">
+                                        <div class="experience-opt-icon">🌟</div>
+                                        <div class="experience-opt-details">
+                                            <h4>Experiencia Frutopia Premium</h4>
+                                            <p>Tour completo + Cosecha + Taller de mermelada artesanal + Cata frutal. (Duración: 4.5h)</p>
+                                        </div>
+                                        <div class="experience-opt-price">
+                                            $25.00 <span>por adulto</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Experience Option 3 -->
+                                    <div class="experience-option" data-tour="express" data-price-adult="10" data-price-child="5">
+                                        <div class="experience-opt-icon">🚶</div>
+                                        <div class="experience-opt-details">
+                                            <h4>Paseo Rústico Express</h4>
+                                            <p>Senderismo libre por la finca + Degustación de jugo fresco de bienvenida. (Duración: 1.5h)</p>
+                                        </div>
+                                        <div class="experience-opt-price">
+                                            $10.00 <span>por adulto</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <!-- STEP 2: SELECT DATE & TIME -->
+                            <div class="booking-step" id="step-2">
+                                <h3 class="step-title">2. Selecciona la fecha y hora de tu visita</h3>
+                                <div class="date-selector-grid">
+                                    <div class="calendar-input-wrapper">
+                                        <label class="form-label" for="tour-date">Fecha de visita</label>
+                                        <input type="date" id="tour-date" class="form-input" style="width: 100%;" required>
+                                    </div>
+                                    
+                                    <div class="calendar-input-wrapper" style="margin-top: 15px;">
+                                        <label class="form-label">Horarios disponibles</label>
+                                        <div class="time-slot-grid">
+                                            <div class="time-slot selected" data-time="09:00 AM">09:00 AM</div>
+                                            <div class="time-slot" data-time="11:30 AM">11:30 AM</div>
+                                            <div class="time-slot" data-time="02:00 PM">02:00 PM</div>
+                                            <div class="time-slot" data-time="04:30 PM">04:30 PM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- STEP 3: VISTORS COUNT -->
+                            <div class="booking-step" id="step-3">
+                                <h3 class="step-title">3. Define los integrantes del grupo</h3>
+                                <div class="visitors-container">
+                                    
+                                    <!-- Adults count -->
+                                    <div class="visitor-row">
+                                        <div class="visitor-label">
+                                            <h4>Adultos</h4>
+                                            <p>De 12 años en adelante</p>
+                                        </div>
+                                        <div class="counter-control">
+                                            <button type="button" class="btn-counter" id="btn-adult-minus">-</button>
+                                            <span class="counter-value" id="val-adult">1</span>
+                                            <button type="button" class="btn-counter" id="btn-adult-plus">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Children count -->
+                                    <div class="visitor-row">
+                                        <div class="visitor-label">
+                                            <h4>Niños</h4>
+                                            <p>De 3 a 11 años (menores de 3 entran gratis)</p>
+                                        </div>
+                                        <div class="counter-control">
+                                            <button type="button" class="btn-counter" id="btn-child-minus">-</button>
+                                            <span class="counter-value" id="val-child">0</span>
+                                            <button type="button" class="btn-counter" id="btn-child-plus">+</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <!-- STEP 4: CUSTOMER CONTACT DATA -->
+                            <div class="booking-step" id="step-4">
+                                <h3 class="step-title">4. Completa tus datos de contacto</h3>
+                                <div class="form-grid">
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label" for="client-name">Nombre Completo</label>
+                                        <input type="text" id="client-name" class="form-input" placeholder="Ej: Juan Pérez" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label" for="client-phone">Número de Teléfono</label>
+                                        <input type="tel" id="client-phone" class="form-input" placeholder="Ej: +506 8888-8888" required>
+                                    </div>
+                                    
+                                    <div class="form-group form-grid-full">
+                                        <label class="form-label" for="client-email">Correo Electrónico</label>
+                                        <input type="email" id="client-email" class="form-input" placeholder="Ej: juan@example.com" required>
+                                    </div>
+                                    
+                                    <div class="form-group form-grid-full">
+                                        <label class="form-label" for="client-comments">Notas Especiales / Alergias</label>
+                                        <input type="text" id="client-comments" class="form-input" placeholder="Ej: Dos personas vegetarianas, alergia al melocotón">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <!-- Form steps controller buttons -->
+                            <div class="form-nav-buttons">
+                                <button type="button" class="btn btn-outline" id="btn-prev" style="visibility: hidden;">Anterior</button>
+                                <button type="button" class="btn btn-primary" id="btn-next">Siguiente</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+                    <!-- RIGHT COLUMN: Dynamic Price & Selection Summary -->
+                    <div class="booking-summary-side">
+                        <h3 class="summary-title">Resumen de Reserva</h3>
+                        
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span class="label">Experiencia:</span>
+                                <span class="value" id="sum-tour">Tour Cosecha & Sendero</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="label">Fecha y Hora:</span>
+                                <span class="value" id="sum-date">No seleccionada</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="label">Visitantes:</span>
+                                <span class="value" id="sum-visitors">1 Adulto, 0 Niños</span>
+                            </div>
+                            <div class="summary-row" id="sum-row-base" style="border-t: 1px dashed hsl(var(--border)); padding-top: 10px;">
+                                <span class="label">Monto base:</span>
+                                <span class="value" id="sum-val-base">$15.00</span>
+                            </div>
+                            <div class="summary-row" id="sum-row-discount" style="display: none; color: hsl(var(--accent));">
+                                <span class="label">Descuento de Grupo (10%):</span>
+                                <span class="value" id="sum-val-discount">-$0.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-price-box">
+                            <div class="summary-total-price">
+                                <span style="font-family:'Inter',sans-serif;">Total:</span>
+                                <div id="sum-total">$15.00 <span style="font-size:0.9rem;">USD</span></div>
+                            </div>
+                            
+                            <div class="discount-notice" id="discount-notice">
+                                ¡Aplicado 10% de descuento por grupo de más de 5 personas! 🎉
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUCCESS CELEBRATION MODAL OVERLAY -->
+    <div class="success-overlay" id="success-overlay">
+        <!-- Confetti canvas background -->
+        <canvas class="success-canvas" id="success-canvas"></canvas>
+        
+        <div class="success-card">
+            <div class="success-icon-wrapper">🍊</div>
+            <h2 class="success-title">¡Aventura Reservada!</h2>
+            <p class="success-subtitle" id="success-message">
+                Muchas gracias por reservar, Juan. Tu solicitud se ha procesado exitosamente y te enviamos un correo con los detalles de tu visita.
+            </p>
+            
+            <!-- CLIENT TELEGRAM SYNC WIDGET -->
+            <div class="tg-sync-box" id="tg-sync-box">
+                <div class="tg-sync-header">
+                    <span class="tg-sync-badge">🔥 Novedad</span>
+                    <h3>🔔 Activar Recordatorios por Telegram</h3>
+                    <p>Escanea el código QR o ingresa tu ID para recibir tu Ticket Digital y avisos de tu aventura en tiempo real.</p>
+                </div>
+                
+                <div class="tg-sync-body" id="tg-sync-body-panel">
+                    <!-- Column 1: QR Code -->
+                    <div class="tg-qr-column">
+                        <div class="qr-wrapper">
+                            <img id="client-qr-img" src="" alt="Escanea para vincular Telegram">
+                            <div class="qr-loading" id="qr-loading">Generando QR...</div>
+                        </div>
+                        <a href="#" id="btn-client-tg-direct" target="_blank" class="btn btn-outline btn-sm" style="width: 100%; margin-top: 12px; padding: 8px 12px; font-size: 0.85rem;">
+                            💬 Abrir en Móvil
+                        </a>
+                    </div>
+                    
+                    <!-- Column 2: Manual Linking Form -->
+                    <div class="tg-manual-column">
+                        <div class="form-group" style="text-align: left;">
+                            <label class="form-label" style="font-size: 0.8rem; color: hsl(var(--text-main));">Vincular usando tu ID de Telegram</label>
+                            <div style="display: flex; gap: 8px; margin-top: 6px;">
+                                <input type="text" id="client-chat-id" class="form-input" placeholder="Tu Chat ID (Ej: 1234567)" style="flex-grow: 1; padding: 10px 12px; font-size: 0.9rem;">
+                                <button type="button" class="btn btn-primary" id="btn-activate-client-tg" style="padding: 10px 16px;">Activar</button>
+                            </div>
+                            <p class="form-helper" style="font-size: 0.75rem; color: hsl(var(--text-muted)); margin-top: 8px; line-height: 1.4;">
+                                💡 Obtén tu ID al instante iniciando el bot <a href="https://t.me/userinfobot" target="_blank" style="color: hsl(var(--accent)); font-weight: 600; text-decoration: underline;">@userinfobot</a> y enviando cualquier mensaje. Debes copiar e ingresar el valor numérico que aparece en la línea <b>"Id:"</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Linked Success State -->
+                <div class="tg-sync-success" id="tg-sync-success-state" style="display: none;">
+                    <div class="success-checkmark-icon">✔️</div>
+                    <h4>¡Telegram Vinculado Exitosamente! 🍊</h4>
+                    <p>Hemos enviado tu Ticket Digital a tu celular. Recibirás avisos y recomendaciones automáticas de tu visita.</p>
+                </div>
+            </div>
+            
+            <!-- Success guided steps (AniMarket 3 steps layout) -->
+            <div class="success-steps" style="margin-top: 30px;">
+                <!-- Step 1 -->
+                <div class="success-step-box">
+                    <div class="success-step-num">01</div>
+                    <h4>Revisa tu correo</h4>
+                    <p>Enviamos tu ticket digital y las instrucciones de pago para confirmar tu cupo.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="success-step-box">
+                    <div class="success-step-num">02</div>
+                    <h4>Mapa Offline</h4>
+                    <p>Descarga las coordenadas GPS para llegar sin problemas. No hay mucha señal en la montaña.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="success-step-box">
+                    <div class="success-step-num">03</div>
+                    <h4>Qué traer</h4>
+                    <p>Recomendamos botas de montaña, bloqueador solar y ropa cómoda lista para cosechar.</p>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary" id="btn-close-success" style="margin-top: 30px;">Volver a la página</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    Frutopia<span>.</span>
+                </a>
+                
+                <div class="footer-nav">
+                    <a href="#actividades">Actividades</a>
+                    <a href="#mapa">Mapa de la Finca</a>
+                    <a href="#reservas">Módulo de Reservas</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Frutopia. Todos los derechos reservados. Turismo rural y sostenible.</p>
+                <p>
+                    Ubicación: Valle Verde, Costa Rica. Reservas de Tour de Campo.
+                    <a href="#" id="btn-admin-panel" class="footer-admin-link">🔓 Acceso Admin</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADMIN PANEL CONFIGURATION MODAL -->
+    <div class="admin-modal-overlay" id="admin-modal-overlay">
+        <div class="admin-modal-card">
+            <button class="admin-modal-close" id="btn-close-admin">&times;</button>
+            
+            <!-- VIEW 1: PASSWORD AUTH -->
+            <div class="admin-view active" id="admin-view-auth">
+                <div class="admin-icon-header">🔑</div>
+                <h3 class="admin-modal-title">Panel de Control</h3>
+                <p class="admin-modal-desc">Ingresa la contraseña de administrador para configurar los canales de notificaciones de Telegram.</p>
+                
+                <form id="admin-auth-form" onsubmit="return false;">
+                    <div class="form-group" style="margin-bottom: 20px; text-align: left;">
+                        <label class="form-label" for="admin-pass">Contraseña</label>
+                        <input type="password" id="admin-pass" class="form-input" placeholder="••••••••" required style="width: 100%;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-auth">Ingresar</button>
+                </form>
+                <div class="admin-error-msg" id="admin-auth-error" style="color: #ef4444; font-size: 0.85rem; margin-top: 12px; font-weight: 600; text-align: center; display: none;">Contraseña incorrecta</div>
+            </div>
+            
+            <!-- VIEW 2: TELEGRAM CONFIGURATION -->
+            <div class="admin-view" id="admin-view-config">
+                <div class="admin-icon-header">🍊</div>
+                <h3 class="admin-modal-title">Configuración del Bot</h3>
+                <p class="admin-modal-desc">Personaliza el canal de recepción de reservas. Si deseas usar tu propio Bot, define las credenciales a continuación.</p>
+                
+                <form id="admin-config-form" onsubmit="return false;">
+                    <div class="form-group" style="margin-bottom: 16px; text-align: left;">
+                        <label class="form-label" for="admin-token">Bot Token</label>
+                        <input type="text" id="admin-token" class="form-input" placeholder="Ej: 8975657809:AAHS..." required style="width: 100%;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 20px; text-align: left;">
+                        <label class="form-label" for="admin-chat">Chat ID (Admin)</label>
+                        <input type="text" id="admin-chat" class="form-input" placeholder="Ej: 8265798792" required style="width: 100%;">
+                        <p class="form-helper" style="font-size: 0.75rem; color: hsl(var(--text-muted)); margin-top: 6px; line-height: 1.4;">
+                            Escribe tu Chat ID de Telegram para recibir las notificaciones de las reservas en tiempo real.
+                        </p>
+                        
+                        <!-- INTELLIGENT DEEP LINK VINCULATOR -->
+                        <div style="border-top: 1px dashed hsl(var(--border)); padding-top: 14px; margin-top: 14px;">
+                            <label class="form-label" style="font-size: 0.8rem; font-weight: 700; color: hsl(var(--text-main)); display: flex; align-items: center; gap: 6px;">
+                                🔗 Vinculación Rápida por Telegram
+                            </label>
+                            <p style="font-size: 0.75rem; color: hsl(var(--text-muted)); margin-bottom: 10px; line-height: 1.3;">
+                                ¿No sabes tu Chat ID? Abre tu bot e inicia conversación (brindando tu token de acceso):
+                            </p>
+                            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 8px;">
+                                <a href="#" id="btn-admin-deep-link" target="_blank" class="btn btn-outline btn-sm" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.75rem; padding: 8px 10px; font-weight: 600; text-align: center; text-decoration: none;">
+                                    💬 Iniciar en Bot
+                                </a>
+                                <button type="button" class="btn btn-outline btn-sm" id="btn-detect-admin" style="font-size: 0.75rem; padding: 8px 10px; font-weight: 600; text-align: center;">
+                                    🔄 Detectar ID
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-buttons-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px;">
+                        <button type="button" class="btn btn-outline" id="btn-test-bot" style="padding: 10px;">Probar Conexión</button>
+                        <button type="submit" class="btn btn-primary" id="btn-save-admin" style="padding: 10px;">Guardar Cambios</button>
+                    </div>
+                </form>
+                
+                <div class="admin-test-status" id="admin-test-status" style="margin-top: 15px; font-size: 0.85rem; font-weight: 600; text-align: center; display: none; padding: 8px; border-radius: 6px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Javascript file link -->
+    <script src="app.js"></script>
+</body>
+</html>
