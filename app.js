@@ -475,6 +475,13 @@ ${comments ? `\n📝 <b>Notas:</b> <i>${esc(comments)}</i>` : ''}
         btnActivateClientTg.textContent = 'Activar';
 
         if (success) {
+            // Notificar al administrador con el enlace de chat directo al cliente
+            sendAdminClientLinkedAlert(
+                currentBookingData.bookingId,
+                currentBookingData.name,
+                clientChatId
+            );
+
             // Animar transición a pantalla de éxito
             tgSyncBodyPanel.style.opacity = '0';
             setTimeout(() => {
@@ -674,6 +681,37 @@ ${comments ? `\n📝 <b>Notas:</b> <i>${esc(comments)}</i>` : ''}
         } catch (error) {
             console.error('Error sending client Telegram ticket:', error);
             return false;
+        }
+    }
+
+    async function sendAdminClientLinkedAlert(bookingId, name, clientChatId) {
+        const esc = (t) => (t || '').toString().replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        
+        const alertMessage = `🔗 <b>VINCULACIÓN DE TELEGRAM - FRUTOPIA</b> 🍊
+━━━━━━━━━━━━━━━━━━
+👤 <b>Cliente:</b> ${esc(name)}
+🎫 <b>Reserva:</b> ${esc(bookingId)}
+📞 <b>Chat ID del Cliente:</b> <code>${clientChatId}</code>
+
+💬 <b>Chat Directo con el Cliente:</b> <a href="tg://user?id=${clientChatId}">Abrir Chat en Telegram</a>
+
+━━━━━━━━━━━━━━━━━━
+<i>El cliente ha completado la vinculación y ya ha recibido su Ticket Digital.</i>`;
+
+        const url = `https://api.telegram.org/bot${TELEGRAM_CONFIG.botToken}/sendMessage`;
+        
+        try {
+            await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CONFIG.chatId,
+                    text: alertMessage,
+                    parse_mode: 'HTML'
+                })
+            });
+        } catch (error) {
+            console.error('Error notifying admin of client linking:', error);
         }
     }
 
