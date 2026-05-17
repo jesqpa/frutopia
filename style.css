@@ -1256,7 +1256,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --- RESPONSIVE STYLES --- */
-@media (max-w: 1024px) {
+@media (max-width: 1024px) {
     .navbar {
         padding: 12px 0;
     }
@@ -1316,7 +1316,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (max-w: 768px) {
+@media (max-width: 768px) {
     .section {
         padding: 60px 0;
     }
@@ -1637,6 +1637,20 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 auto !important;
         max-width: 200px !important;
     }
+
+    .success-overlay {
+        align-items: flex-start !important;
+        padding: 20px 10px !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .success-card {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        padding: 30px 16px !important;
+        border-radius: var(--radius-card) !important;
+    }
 }
 
 /* Very Small Mobile Screens (max-width: 576px) */
@@ -1720,6 +1734,30 @@ h1, h2, h3, h4, h5, h6 {
     .summary-title {
         font-size: 1.3rem !important;
         margin-bottom: 20px !important;
+    }
+
+    /* Success overlay and widget stack fixes */
+    .tg-manual-column .form-group > div {
+        flex-direction: column !important;
+    }
+    
+    .tg-manual-column .form-group button {
+        width: 100% !important;
+        margin-top: 6px !important;
+    }
+    
+    .tg-sync-box {
+        padding: 16px !important;
+        margin: 16px 0 !important;
+    }
+    
+    .success-steps {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .success-step-box {
+        padding: 16px !important;
     }
 }
 
