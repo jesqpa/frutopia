@@ -1592,16 +1592,135 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-/* Adjustments for dynamic alignment inside success steps */
+/* ==========================================================================
+   📱 MOBILE & TABLET RESPONSIVE OPTIMIZATIONS
+   ========================================================================== */
+
+/* Tablet & Smaller Screens (max-width: 992px) */
+@media (max-width: 992px) {
+    /* Interactive Map Section */
+    .map-layout {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .station-panel {
+        min-height: auto !important;
+    }
+    
+    /* Reservations Section */
+    .booking-layout {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .booking-form-side {
+        padding: 40px 24px !important;
+    }
+    
+    .booking-summary-side {
+        border-left: none !important;
+        border-top: 1px solid hsl(var(--border)) !important;
+        padding: 40px 24px !important;
+        background: linear-gradient(180deg, hsla(var(--primary), 0.01) 0%, hsla(var(--primary), 0.05) 100%) !important;
+    }
+}
+
+/* Mobile Screens (max-width: 768px) */
 @media (max-width: 768px) {
     .tg-sync-body {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        text-align: center;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+        text-align: center !important;
     }
     
     .tg-qr-column {
-        margin: 0 auto;
-        max-width: 200px;
+        margin: 0 auto !important;
+        max-width: 200px !important;
     }
 }
+
+/* Very Small Mobile Screens (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Map Section adjustments */
+    .map-visual-container {
+        padding: 10px !important;
+    }
+    
+    .station-content-body {
+        padding: 24px 20px !important;
+    }
+    
+    .station-title {
+        font-size: 1.4rem !important;
+    }
+    
+    .station-content {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Steps navigation scaling */
+    .steps-nav {
+        margin-bottom: 36px !important;
+    }
+
+    .step-node {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 0.85rem !important;
+    }
+
+    .step-node-label {
+        bottom: -24px !important;
+        font-size: 0.65rem !important;
+    }
+
+    .steps-nav::before,
+    .steps-nav-progress {
+        top: 16px !important;
+    }
+
+    /* Experience cards stacked grid */
+    .experience-option {
+        grid-template-columns: auto 1fr !important;
+        gap: 12px !important;
+        padding: 16px !important;
+    }
+    
+    .experience-opt-price {
+        grid-column: 1 / -1 !important;
+        text-align: right !important;
+        margin-top: 8px !important;
+        border-top: 1px dashed hsl(var(--border)) !important;
+        padding-top: 8px !important;
+        font-size: 1.15rem !important;
+    }
+
+    /* Contact details form stacking */
+    .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .form-grid-full {
+        grid-column: span 1 !important;
+    }
+
+    .form-input {
+        padding: 12px 14px !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Summary Side */
+    .booking-summary-side {
+        padding: 30px 16px !important;
+    }
+
+    .summary-title {
+        font-size: 1.3rem !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+
